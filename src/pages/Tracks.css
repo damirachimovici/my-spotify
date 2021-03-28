@@ -1,0 +1,71 @@
+.tracks__wrapper {
+    padding-left: 0;
+    list-style: none;
+    height: 100%;
+    overflow-y: auto;
+    margin-left: 10px;
+}
+
+.player-wrapper h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content__wrapper {
+    height: 424px;
+    width: 739.45px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    background: linear-gradient(90deg, rgba(33,5,52,1) 0%, rgba(31,5,10,1) 100%);
+}
+
+.content__wrapper > section {
+    width: 100%;
+}
+
+.section__tracks {
+    height: 400px;
+    overflow: hidden;
+}
+
+.section__player {
+    display: flex;
+}
+
+.section__player iframe {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+    .content__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .player-wrapper h1 {
+        text-align: left;
+        margin-top: 18px;
+        margin-left: 120px;
+    }
+    .tracks__wrapper{
+        margin-top: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 75px;
+        background-color: black;
+        width: 284px;
+        height: 284px;
+    }
+    .section__player{
+        height: 20%;
+    }
+    .section__player iframe{
+        margin-left: 70px;
+    }
+    .content__wrapper > section {
+        width: 50%;
+        margin-left: 50px;
+    }
+}

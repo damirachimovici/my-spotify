@@ -1,0 +1,68 @@
+.home-page{
+    background: url("/src/images/Hero.jpg");
+    width: 100%;
+    padding-bottom: 539px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn-two {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+.btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+}
+h1{
+    color: whitesmoke;
+    text-shadow: #1A0F16;
+}
+
+p{
+    color: white;
+}
+
+.get-started{
+    margin-top: 200px;
+    margin-right: 250px
+}
+
+@media screen and (max-width: 576px) {
+    .home-page{
+        background:linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);
+        padding-bottom: 100%;
+    }
+    .get-started{
+        margin-left: 10px;
+    }
+}

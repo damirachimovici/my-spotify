@@ -1,0 +1,43 @@
+.login{
+    background:linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 500px;
+}
+.form{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-top: 30px;
+}
+
+.myButton {
+    box-shadow: inset 0px -1px 0px 0px #e184f3;
+    background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+    border-radius: 14px;
+    border: 2px solid #a511c0;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 61px;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+@media screen and (max-width: 576px) {
+    .login{
+        padding-bottom: 240px;
+    }
+}
